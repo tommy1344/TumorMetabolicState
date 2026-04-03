@@ -1,0 +1,29 @@
+[project]
+name = "Tumor Metabolic State"
+version = "0.1.0"
+description = "Tool to identify the metabolic state of tumor using multiomics data"
+requires-python = ">=3.10, < 3.14"
+authors = [
+    {name = "Tommy Dalessio", email = "tommy1344@vt.edu"},
+    {name = "Eitan Pupkin", email = "epupkin@vt.edu"}
+]
+readme = {file = "README.md", content-type = "text/markdown"}
+dependencies = [
+]
+keywords = ["metabolic state", "tumor", "multiomics"]
+[dependency-groups]
+test = [
+    "pytest == 8.2.0"
+]
+lint = [
+    "ruff == 0.4.4",
+]
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["TumorMetabolicState"]
+
+[project.scripts]
+TumorMetabolicState = "TumorMetabolicState.TumorMetabolicState:main"
