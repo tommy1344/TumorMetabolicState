@@ -56,5 +56,6 @@ def main():
     matrix = build_matrix(config.DATA_DIR, output_path)
     print(matrix.head())
 
+# To run use python build_matrix.py
 if __name__ == "__main__":
     main()
