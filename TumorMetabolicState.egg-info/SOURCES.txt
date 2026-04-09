@@ -2,7 +2,6 @@ README.md
 pyproject.toml
 TumorMetabolicState/TumorMetabolicState.py
 TumorMetabolicState/__init__.py
-TumorMetabolicState/build_matrix.py
 TumorMetabolicState.egg-info/PKG-INFO
 TumorMetabolicState.egg-info/SOURCES.txt
 TumorMetabolicState.egg-info/dependency_links.txt
