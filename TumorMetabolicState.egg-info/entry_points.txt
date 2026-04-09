@@ -1,0 +1,2 @@
+[console_scripts]
+TumorMetabolicState = TumorMetabolicState.TumorMetabolicState:main

@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: TumorMetabolicState
+Version: 0.1.0
+Summary: Tool to identify the metabolic state of tumor using multiomics data
+Author-email: Tommy Dalessio <tommy1344@vt.edu>, Eitan Pupkin <epupkin@vt.edu>
+Keywords: metabolic state,tumor,multiomics
+Requires-Python: <3.14,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv==1.2.2
+Requires-Dist: pandas>=2.0
+Requires-Dist: numpy>=1.26
+
+# TumorMetabolicState
+ 
