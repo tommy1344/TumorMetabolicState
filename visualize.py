@@ -41,6 +41,10 @@ def plot_pca(matrix):
     # transpose so rows are samples
     X = matrix.T.values
 
+    # go back and make another pca graph with the non normalized graph
+    # pca = PCA(n_components=2)
+    # coords = pca.fit_transform(x)
+
     # scale before PCA
     X_scaled = StandardScaler().fit_transform(X)
 
@@ -54,7 +58,7 @@ def plot_pca(matrix):
     ax.set_xlabel(f"PC1 ({var_explained[0]:.1f}% variance)")
     ax.set_ylabel(f"PC2 ({var_explained[1]:.1f}% variance)")
 
-    path = os.path.join(FIGURES_DIR, "pca.png")
+    path = os.path.join(FIGURES_DIR, "pcaNormalized.png")
     fig.savefig(path, dpi=150, bbox_inches="tight")
     plt.close(fig)
     print(f"Saved: {path}")
