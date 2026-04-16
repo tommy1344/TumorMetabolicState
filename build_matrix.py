@@ -41,9 +41,6 @@ def build_matrix(data_dir, output_path):
     # fill missing values with per-gene median
     matrix = matrix.apply(lambda row: row.fillna(row.median()), axis=1)
 
-    # log1p transform
-    matrix = np.log1p(matrix)
-
     # save
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     matrix.to_csv(output_path)
