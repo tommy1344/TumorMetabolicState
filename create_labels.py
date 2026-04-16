@@ -21,8 +21,8 @@ def main():
     # threshold is one standard deviation from the mean of the delta
     mean = delta.mean()
     std = delta.std()
-    upper = mean + std
-    lower = mean - std
+    upper = mean + (.8 * std)
+    lower = mean - (.8 * std)
 
     def assign_label(d):
         if d > upper:
