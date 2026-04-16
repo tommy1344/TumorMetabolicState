@@ -16,7 +16,7 @@ def run_ssgsea(matrix_path, gene_set_file, output_name):
         outdir=None,
         sample_norm_method="rank",
         no_plot=True,
-        processes=4,
+        threads=4,
     )
 
     scores = ss.res2d
@@ -29,7 +29,6 @@ def main():
     matrix_path = os.path.join(RESULTS_DIR, "gene_sample_matrix.csv")
 
     run_ssgsea(matrix_path, "h.all.v2026.1.Hs.symbols.gmt", "hallmarks")
-    run_ssgsea(matrix_path, "c2.all.v2026.1.Hs.symbols.gmt", "c2")
 
 if __name__ == "__main__":
     main()
